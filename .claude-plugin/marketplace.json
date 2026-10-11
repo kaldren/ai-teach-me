@@ -1,12 +1,12 @@
 {
-  "name": "ai-and-human-in-sync",
+  "name": "ai-teach-me",
   "description": "Claude Code plugin that keeps Markdown learning notes for every technology you adopt.",
   "owner": {
     "name": "Kaloyan Drenski"
   },
   "plugins": [
     {
-      "name": "ai-and-human-in-sync",
+      "name": "ai-teach-me",
       "source": "./",
       "description": "Markdown learning notes for every technology you adopt while coding with Claude."
     }

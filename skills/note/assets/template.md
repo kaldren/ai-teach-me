@@ -1,20 +1,23 @@
 ---
 name: <Technology name>
-slug: <kebab-case-slug>           # matches the file name
+slug: <kebab-case-slug>
+version: <version line, e.g. 15 (0.x: 0.4); omit when the technology has none>  # matches the file name
 aliases: []                       # other names/spellings, e.g. [Next, NextJS]
 category: <frontend | backend | database | devops | testing | language | tooling | ai | other>
 official_site: <URL>
-first_added: <YYYY-MM-DD>
-last_updated: <YYYY-MM-DD>
-version_at_time_of_writing: <e.g. 15.x>
-used_in_projects:
-  - <project-name> (<YYYY-MM-DD>) — <what it is used for there>
+created: <YYYY-MM-DD>
+version_at_time_of_writing: <exact version, e.g. 15.2.3>
+first_used_in: <project-name> — <what it is used for there>
 ---
 
-# <Technology name>
+# <Technology name> <version line>
 
 ## What it is
 <Two or three sentences: the problem it solves and where it sits in the stack.>
+
+## What changed since the previous version
+<Only when a note for an older version line exists: the breaking changes since that line, and a link to the
+official migration guide. Otherwise delete this section.>
 
 ## Why it was chosen here
 <The project context: the need we had and why this technology rather than an alternative.>
@@ -44,6 +47,3 @@ used_in_projects:
 ## Check your understanding
 1. <question>
 2. <question>
-
-## Project notes
-<Free-form notes, appended each time the technology is used in a new project.>

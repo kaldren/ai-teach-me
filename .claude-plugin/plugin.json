@@ -1,17 +1,30 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
-  "name": "ai-and-human-in-sync",
-  "version": "0.1.0",
+  "name": "ai-teach-me",
+  "displayName": "AI, Teach Me!",
+  "version": "0.2.0",
   "description": "Stop coding blind with AI: every technology Claude proposes and you adopt gets a Markdown learning note (key concepts, pitfalls, alternatives, official docs) in your personal knowledgebase.",
-  "author": { "name": "Kaloyan Drenski" },
+  "author": {
+    "name": "Kaloyan Drenski"
+  },
   "license": "MIT",
-  "keywords": ["learning", "knowledgebase", "documentation", "notes"],
+  "keywords": [
+    "learning",
+    "knowledgebase",
+    "documentation",
+    "notes"
+  ],
   "userConfig": {
     "notes_dir": {
+      "type": "directory",
+      "title": "Knowledge base folder",
+      "description": "Full path of the folder where your technology notes are stored. Leave empty to create it in your Documents folder (macOS/Windows: ~/Documents, Linux: your XDG Documents folder) under the name below. Created on first use."
+    },
+    "kb_folder_name": {
       "type": "string",
-      "title": "Knowledgebase folder",
-      "description": "Absolute path of the folder where technology notes are stored. Created on first use.",
-      "default": "~/tech-notes"
+      "title": "Knowledge base folder name",
+      "description": "Name of the folder created in Documents when the path above is empty. One word, no slashes.",
+      "default": "ai-teach-me-kb"
     }
   }
 }

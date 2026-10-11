@@ -7,7 +7,6 @@ category: <frontend | backend | database | devops | testing | language | tooling
 official_site: <URL>
 created: <YYYY-MM-DD>
 version_at_time_of_writing: <exact version, e.g. 15.2.3>
-first_used_in: <project-name> — <what it is used for there>
 ---
 
 # <Technology name> <version line>
@@ -18,9 +17,6 @@ first_used_in: <project-name> — <what it is used for there>
 ## What changed since the previous version
 <Only when a note for an older version line exists: the breaking changes since that line, and a link to the
 official migration guide. Otherwise delete this section.>
-
-## Why it was chosen here
-<The project context: the need we had and why this technology rather than an alternative.>
 
 ## Key concepts to understand
 - **<Concept>** — <plain-language explanation>

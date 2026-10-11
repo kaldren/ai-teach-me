@@ -55,7 +55,8 @@ Knowledgebase folder: $dir ($state)
 
 Whenever a technology (framework, library, database, service, CLI tool, language, platform, protocol)
 is proposed and the user accepts it, or it gets added to the project, invoke the \`ai-teach-me:note\` skill
-for it. Skip trivial utilities. Also offer it for significant technologies already in the project that lack a note.
+for it. When a whole stack is accepted, the skill must cover every technology in it, not just the main one.
+Skip trivial utilities. Also offer it for significant technologies already in the project that lack a note.
 All notes are written in English, whatever language the conversation is in."
 
 # JSON-escape the context without depending on jq/python.

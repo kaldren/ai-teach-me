@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "ai-teach-me",
   "displayName": "AI, Teach Me!",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Stop coding blind with AI: every technology Claude proposes and you adopt gets a Markdown learning note (key concepts, pitfalls, alternatives, official docs) in your personal knowledgebase.",
   "author": {
     "name": "Kaloyan Drenski"

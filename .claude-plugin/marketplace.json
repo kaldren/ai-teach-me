@@ -1,0 +1,14 @@
+{
+  "name": "tech-notes",
+  "description": "Claude Code plugin that keeps Markdown learning notes for every technology you adopt.",
+  "owner": {
+    "name": "Kaloyan Drenski"
+  },
+  "plugins": [
+    {
+      "name": "tech-notes",
+      "source": "./",
+      "description": "Markdown learning notes for every technology you adopt while coding with Claude."
+    }
+  ]
+}

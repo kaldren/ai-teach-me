@@ -1,4 +1,4 @@
-# tech-notes
+# AI & Human in Sync
 
 **Stop coding blind with AI.** A Claude Code plugin that writes a learning note every time you adopt a
 technology Claude suggests: what it is, why it was chosen for your project, key concepts, common pitfalls,
@@ -12,7 +12,7 @@ your whole stack.
 In Claude Code:
 
 ```
-/plugin install tech-notes --marketplace kaldren/tech-notes
+/plugin install ai-and-human-in-sync --marketplace kaldren/ai-and-human-in-sync
 ```
 
 Answer `y` to add the marketplace and pick the **user** scope so it works in every project. You can choose where
@@ -22,7 +22,7 @@ notes are stored during install (default `~/tech-notes`).
 
 1. A `SessionStart` hook adds a short rule to every session: when a technology is proposed and you accept it,
    record it.
-2. The `tech-notes:note` skill does the work:
+2. The `ai-and-human-in-sync:note` skill does the work:
    - looks for an existing note (by slug and aliases);
    - **missing**: creates `technologies/<slug>.md` from the template, pinned to the version your project uses,
      and adds it to the index in `README.md`;
@@ -36,14 +36,14 @@ Notes are always written in English, whatever language you talk to Claude in.
 You can also ask for a note manually:
 
 ```
-/tech-notes:note PostgreSQL
+/ai-and-human-in-sync:note PostgreSQL
 ```
 
 ## Configuration
 
 | Setting | How | Default |
 |---|---|---|
-| Notes folder | plugin option `notes_dir` (`/plugin` → tech-notes → configure), or the `TECH_NOTES_DIR` env var | `~/tech-notes` |
+| Notes folder | plugin option `notes_dir` (`/plugin` → ai-and-human-in-sync → configure), or the `AI_HUMAN_SYNC_NOTES_DIR` env var | `~/tech-notes` |
 | Note format | edit `_TEMPLATE.md` in your notes folder; new notes follow it | the bundled template |
 
 ## Repository layout
@@ -60,7 +60,7 @@ skills/note/assets/               template and index copied into a new notes fol
 
 ```
 claude plugin validate --strict .
-claude --plugin-dir /path/to/tech-notes
+claude --plugin-dir /path/to/ai-and-human-in-sync
 ```
 
 ## License

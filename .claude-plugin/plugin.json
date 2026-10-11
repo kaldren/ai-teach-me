@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
-  "name": "tech-notes",
+  "name": "ai-and-human-in-sync",
   "version": "0.1.0",
   "description": "Stop coding blind with AI: every technology Claude proposes and you adopt gets a Markdown learning note (key concepts, pitfalls, alternatives, official docs) in your personal knowledgebase.",
   "author": { "name": "Kaloyan Drenski" },

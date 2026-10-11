@@ -1,6 +1,6 @@
 ---
 name: note
-description: Create or update a learning note for a technology in the user's tech-notes knowledgebase. Use when a technology (framework, library, database, service, CLI tool, language, platform, protocol) is proposed and the user accepts it or it is added to the project, or when the user asks to document, explain or learn a technology ("add a note for X", "/tech-notes:note X").
+description: Create or update a learning note for a technology in the user's AI & Human in Sync knowledgebase. Use when a technology (framework, library, database, service, CLI tool, language, platform, protocol) is proposed and the user accepts it or it is added to the project, or when the user asks to document, explain or learn a technology ("add a note for X", "/ai-and-human-in-sync:note X").
 argument-hint: "[technology]"
 ---
 
@@ -11,7 +11,7 @@ verified links to the official docs, not a copy of the docs.
 
 ## 1. Resolve the knowledgebase folder
 
-Use the folder named in the session context by the tech-notes plugin. If none is given, use `$TECH_NOTES_DIR`,
+Use the folder named in the session context by the AI & Human in Sync plugin. If none is given, use `$AI_HUMAN_SYNC_NOTES_DIR`,
 else `~/tech-notes`. Expand `~`.
 
 If the folder or its `technologies/` subfolder does not exist, bootstrap it:
